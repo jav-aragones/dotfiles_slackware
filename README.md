@@ -10,4 +10,9 @@ They are not very advanced, for now.
 En este directorio estan mis configuraciones de sway y las aplicaciones que uso en él.
 No son muy avanzadas, por ahora.
 
+# Screenshot
+
+Screenshot.from.2024-08-30.at.11_18_26.790992387.png
+
+
 Javaragones_at_gmail_at_com.
