@@ -12,6 +12,8 @@ No son muy avanzadas, por ahora.
 
 # Screenshot
 
+https://raw.githubusercontent.com/jav-aragones/dotfiles/blob/master/assets/screenshot_08302024.png
+
 
 https://raw.githubusercontent.com/jav-aragones/dotfiles/master/assets/screenshot-08302024.png
 
