@@ -12,11 +12,7 @@ No son muy avanzadas, por ahora.
 
 # Screenshot
 
-
-https://raw.githubusercontent.com/jav-aragones/dotfiles/master/assets/screenshot-08302024.png
-
-
-https://github.com/jav-aragones/dotfiles/Screenshot.from.2024-08-30.at.11_18_26.790992387.png
+<image src="/assets/screenshot_08302024.jpg" alt="Screenshot de mi sway">
 
 
 Javaragones_at_gmail_at_com.
