@@ -14,15 +14,5 @@ No son muy avanzadas, por ahora.
 
 <image src="/assets/screenshot_08302024.jpg" alt="Screenshot de mi sway">
 
-![Screenshot de mi sway](/assets/screenshot-08302024.jpg)
-
-https://raw.githubusercontent.com/jav-aragones/dotfiles/blob/master/assets/screenshot_08302024.png
-
-
-https://raw.githubusercontent.com/jav-aragones/dotfiles/master/assets/screenshot-08302024.png
-
-
-https://github.com/jav-aragones/dotfiles/Screenshot.from.2024-08-30.at.11_18_26.790992387.png
-
 
 Javaragones_at_gmail_at_com.
