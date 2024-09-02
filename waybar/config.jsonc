@@ -13,7 +13,8 @@
     
     "modules-right": [
         "pulseaudio",
-        "network",
+	"custom/network_traffic",
+   //     "network",
 	"tray",
         "keyboard-state",
         "battery",
@@ -47,7 +48,7 @@
 
     "wlr/taskbar": {
         "format": "{icon}",
-        "icon-size": 28,
+        "icon-size": 24,
         "spacing": 3,
         "on-click-right": "close",
         "tooltip-format": "{title}",
@@ -165,6 +166,13 @@
         "power-saver": ""
       }
     },
+
+    "custom/network_traffic": {
+             "exec": "~/.config/waybar/scripts/network_traffic.sh",
+             "return-type": "json",
+             "format": "Speed:   {}"    // optional
+},
+
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "    {essid} ({signalStrength}%)",
@@ -220,7 +228,7 @@
 
     "custom/power": {
 //	"format": " Apagar  ",
-        "format" : " ⏻ ",
+        "format" : "    ⏻     ",
       	"tooltip": "Salir de Sway" ,
 	"on-click": "wlogout"
 	//	"menu": "on-click",
