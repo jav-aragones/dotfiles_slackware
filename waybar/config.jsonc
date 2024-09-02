@@ -14,11 +14,12 @@
     "modules-right": [
         "pulseaudio",
         "network",
+	"tray",
         "keyboard-state",
         "battery",
         "clock",
-    	"custom/exit",
-    	"custom/reset",
+   // 	"custom/exit",
+   // 	"custom/reset",
         "custom/power"
     ],
     // Modules configuration
@@ -107,7 +108,7 @@
         }
     },
     "tray": {
-        // "icon-size": 21,
+        "icon-size": 24,
         "spacing": 10
     },
     "clock": {
@@ -218,10 +219,10 @@
     
 
     "custom/power": {
-	"format": " Apagar  ",
-      //  "format" : " ⏻ ",
+//	"format": " Apagar  ",
+        "format" : " ⏻ ",
       	"tooltip": "Salir de Sway" ,
-	"on-click": "gksu poweroff"
+	"on-click": "wlogout"
 	//	"menu": "on-click",
 	//	"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
 	//	"menu-actions": {

@@ -13,7 +13,15 @@ font pango: Sans-serif 11
 client.focused #888a85 #285577 #ffffff
 client.unfocused #888a85  #222222 #ffffff
 
+# Notificaciones
+
 exec mako
+
+# Applets de la tray.
+
+exec nm-applet
+exec blueman-applet
+
 
 ### Variables
 #
@@ -34,7 +42,7 @@ set $menu fuzzel
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 #output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #
-output * bg /home/javier/Imágenes/fondo-javier.png fill
+output * bg /home/javier/Imágenes/Dios_es_Amor.jpg fill
 
 # Example configuration:
 #

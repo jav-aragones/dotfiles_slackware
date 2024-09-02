@@ -1,0 +1,18 @@
+{
+    "label" : "logout",
+    "action" : "loginctl terminate-user $USER",
+    "text" : "Salir",
+    "keybind" : "e",
+}
+{
+    "label" : "shutdown",
+    "action" : "loginctl poweroff",
+    "text" : "Apagar",
+    "keybind" : "s"
+}
+{
+    "label" : "reboot",
+    "action" : "loginctl reboot",
+    "text" : "Reiniciar",
+    "keybind" : "r"
+}
