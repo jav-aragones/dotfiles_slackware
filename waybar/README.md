@@ -12,5 +12,5 @@ https://gitlab.com/garuda-linux/themes-and-settings/settings/garuda-sway-setting
 
 * Screenshot
 
-<image src="/scripts/netspeed_on_waybar.png" alt="Screenshot de waybar con netspeed.">
+<image src="/assets/netspeed_on_waybar.png" alt="Screenshot de waybar con netspeed.">
 
