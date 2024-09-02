@@ -12,7 +12,7 @@ No son muy avanzadas, por ahora.
 
 # Screenshot
 
-<image src="/assets/screenshot_09022024.jpg" alt="Screenshot de mi sway">
+<image src="/assets/screenshot_09022024.png" alt="Screenshot de mi sway">
 
 
 Javaragones_at_gmail_at_com.
