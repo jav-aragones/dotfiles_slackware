@@ -2,12 +2,13 @@
 {
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 20, // Waybar height (to be removed for auto height)
+    "height": 26, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
         "custom/os_button",
+	"hyprland/workspaces",
 	"wlr/taskbar"
     ],
     
@@ -24,22 +25,23 @@
         "custom/power"
     ],
     // Modules configuration
-    // "sway/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "warp-on-scroll": false,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
-    //     }
-    // },
+     "hyprland/workspaces": {
+         "disable-scroll": true,
+         "all-outputs": true,
+         "warp-on-scroll": false,
+       //  "format": "{name}: {icon}",
+           "format": " {name} ",
+         "format-icons": {
+             "1": "",
+             "2": "",
+             "3": "",
+             "4": "",
+             "5": "",
+             "urgent": "",
+             "focused": "",
+             "default": ""
+         }
+     },
 
     "custom/os_button": {
         "format": "Slackware",
@@ -170,7 +172,7 @@
     "custom/network_traffic": {
              "exec": "~/.config/waybar/scripts/network_traffic.sh",
              "return-type": "json",
-             "format": "Speed:   {}"    // optional
+             "format": "  {}"    // optional
 },
 
     "network": {
