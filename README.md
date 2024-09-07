@@ -43,6 +43,14 @@ Fuzzel # Application Menu.
 
 Shotman # Screenshot.
 
+
+<v> ON TESTING.</b>
+
+Hyprland. include,
+
+      hyprpapaer
+
+     
 <b>  ES </b>
 
 En este directorio estan mis configuraciones de sway y las aplicaciones que uso en él.
@@ -85,6 +93,13 @@ Foot # terminal
 Fuzzel # Menu de aplicaciones.
 
 Shotman # Captura de pantalla.
+
+
+<b> EN PRUEBAS.</b>
+
+Hyprland. que incluye,
+
+	hyprpaper
 
 
 
