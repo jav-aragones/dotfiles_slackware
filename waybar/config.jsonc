@@ -19,7 +19,8 @@
 	"tray",
         "keyboard-state",
         "battery",
-        "clock",
+	"custom/clock",
+   //     "clock",
    // 	"custom/exit",
    // 	"custom/reset",
         "custom/power"
@@ -114,11 +115,17 @@
         "icon-size": 24,
         "spacing": 10
     },
-    "clock": {
-        "timezone": "America/Argentina/Buenos_Aires",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+     "custom/clock": {
+        "format": "  {}",
+        "interval": 60,
+        "exec": "date +'%d %a %H:%M'",
     },
+    //"clock": {
+    //   "timezone": "America/Argentina/Mendoza",
+      // "timezone": "UTC-03:00",  
+     // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+     //   "format-alt": "{:%Y-%m-%d}"
+    //},
     "cpu": {
         "format": "{usage}% ",
         "tooltip": false
