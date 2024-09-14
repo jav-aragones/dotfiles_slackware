@@ -9,6 +9,7 @@
     "modules-left": [
         "custom/os_button",
 	"hyprland/workspaces",
+//	"sway/workspaces",
 	"wlr/taskbar"
     ],
     
@@ -30,8 +31,8 @@
          "disable-scroll": true,
          "all-outputs": true,
          "warp-on-scroll": false,
-       //  "format": "{name}: {icon}",
-           "format": " {name} ",
+	 "format": "{name}",
+ //        "format": "{name}: {icon}",
          "format-icons": {
              "1": "",
              "2": "",
@@ -118,7 +119,7 @@
      "custom/clock": {
         "format": "  {}",
         "interval": 60,
-        "exec": "date +'%d %a %H:%M'",
+        "exec": "date +'%d %a %H:%M'"
     },
     //"clock": {
     //   "timezone": "America/Argentina/Mendoza",
@@ -152,14 +153,14 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{capacity}% {icon}",
+        "format": "{capacity}% {icon} ",
         "format-full": "{capacity}% {icon}",
         "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": ["  ", "  " , "  ", "  ", "  "]
     },
     "battery#bat2": {
         "bat": "BAT2"
