@@ -1,8 +1,6 @@
- Personalizaciones hechas en los archivos de configuración de hyprland.
+<B> WAYBAR, </b>
 
-WAYBAR.
-
-Añadido boton de menu.
+* Añadido boton de menu.
 
 config.jsonc
 
@@ -29,7 +27,7 @@ style.css
 }
 
 
-Añadido reloj, porque el de waylan no reconoce la hora de Mendoza.
+* Añadido reloj, porque el de waylan no reconoce la hora de Mendoza.
 
 config.jsonc
 
@@ -50,7 +48,7 @@ style.css
 }
 
 
-Añadido network speed, porque el módulo de waybar no muestra correctamente las velociades.
+* Añadido network speed, porque el módulo de waybar no muestra correctamente las velociades.
 
 config.jsonc
   
@@ -68,7 +66,7 @@ style.css
     border-bottom: 1px solid #ffffff;
 }
 
-Script network_traffic.sh
+* Script network_traffic.sh
 
 -- Inicio script.
 
@@ -184,7 +182,7 @@ done
 
 -- Fin script.
 
-Boton Apagar personalizado usando wlogout.
+* Boton Apagar personalizado usando wlogout.
 
 config.jsonc
 
@@ -203,10 +201,11 @@ style.css
     border-bottom: 1px solid #ffffff;
 }
 
-WLOGOUT
+<b>WLOGOUT. </b>
 
-SOLO EN HYPRLAND
  layout
+
+En hyprland se usa esta línea, en sway directamente se usa MOD+SHIFT+e.
 
 {
     "label" : "shutdown",
