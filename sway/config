@@ -10,8 +10,10 @@
 # Barras de titulos.
 
 font pango: Sans-serif 11
-client.focused #888a85 #285577 #ffffff
-client.unfocused #888a85  #222222 #ffffff
+client.focused #9EA09A #1A1AAA #ffffff
+client.unfocused #9EA09A  #222222 #ffffff
+titlebar_border_thickness 1
+
 
 # Notificaciones
 
@@ -33,7 +35,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term foot
+set $term mate-terminal
 # Your preferred application launcher
 set $menu fuzzel
 
@@ -42,7 +44,7 @@ set $menu fuzzel
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 #output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #
-output * bg /home/javier/Imágenes/Dios_es_Amor.jpg fill
+output * bg /home/javier/Imágenes/fondo-javier.png fill
 
 # Example configuration:
 #
@@ -85,7 +87,7 @@ input "type:keyboard" xkb_layout latam
 
 input "type:touchpad" tap enabled dwt enabled
 
-seat seat0 xcursor_theme Adwaita 36
+seat seat0 xcursor_theme breeze-dark 36
 
 
 
