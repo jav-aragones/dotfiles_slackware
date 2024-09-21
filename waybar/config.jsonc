@@ -2,14 +2,14 @@
 {
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 26, // Waybar height (to be removed for auto height)
+    "height": 24, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
         "custom/os_button",
 	"hyprland/workspaces",
-//	"sway/workspaces",
+	"sway/workspaces",
 	"wlr/taskbar"
     ],
     
@@ -21,7 +21,7 @@
         "keyboard-state",
         "battery",
 	"custom/clock",
-   //     "clock",
+       // "clock",
    // 	"custom/exit",
    // 	"custom/reset",
         "custom/power"
@@ -31,18 +31,18 @@
          "disable-scroll": true,
          "all-outputs": true,
          "warp-on-scroll": false,
-	 "format": "{name}",
+	 "format": "{name}"
  //        "format": "{name}: {icon}",
-         "format-icons": {
-             "1": "",
-             "2": "",
-             "3": "",
-             "4": "",
-             "5": "",
-             "urgent": "",
-             "focused": "",
-             "default": ""
-         }
+    //     "format-icons": {
+    //         "1": "",
+    //         "2": "",
+    //         "3": "",
+    //         "4": "",
+    //         "5": "",
+    //         "urgent": "",
+    //         "focused": "",
+    //         "default": ""
+    //     }
      },
 
     "custom/os_button": {
@@ -112,21 +112,23 @@
             "deactivated": ""
         }
     },
+
     "tray": {
         "icon-size": 24,
         "spacing": 10
     },
-     "custom/clock": {
-        "format": "  {}",
-        "interval": 60,
-        "exec": "date +'%d %a %H:%M'"
-    },
-    //"clock": {
-    //   "timezone": "America/Argentina/Mendoza",
-      // "timezone": "UTC-03:00",  
-     // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-     //   "format-alt": "{:%Y-%m-%d}"
-    //},
+    "custom/clock": {
+    "format": "  {}",
+    "interval": 60,
+    "exec": "date +'%d %a %H:%M'"
+},
+//    "clock": {
+//       "timezone": "America/Argentina/Mendoza",
+//       "timezone": "UTC-03:00",  
+//      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+//        "format-alt": "{:%Y-%m-%d}"
+//    },
+
     "cpu": {
         "format": "{usage}% ",
         "tooltip": false

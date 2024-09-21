@@ -6,7 +6,7 @@
 
 window#waybar {
    /*  background-color: rgba(43, 48, 59, 0.5); */
-	background-color: #000000;
+	background-color: rgba(0, 0, 0, 0.2);
     /* border-bottom: 2px solid rgba(100, 114, 125, 0.5); */
 	border-bottom: 1px solid #ffffff;
     color: #ffffff;
@@ -41,7 +41,7 @@ button {
     box-shadow: inset 0 -3px transparent;
     /* Avoid rounded borders under each button name */
     border: 2px;
-    border-radius: 0;
+    border-radius: 2px;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
@@ -58,16 +58,16 @@ button:hover {
 
 #workspaces button {
     padding: 0 5px;
-    background-color: transparent;
+    background-color: #000000;
     color: #ffffff;
 }
 
 #workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
+    background: #000000;
 }
 
 #workspaces button.focused {
-    background-color: #64727D;
+    background-color: #000000;
     box-shadow: inset 0 -3px #ffffff;
 }
 
@@ -87,7 +87,6 @@ button:hover {
 #disk,
 #temperature,
 #backlight,
-#custom-network-traffic,
 #network,
 #pulseaudio,
 #wireplumber,
@@ -120,6 +119,7 @@ button:hover {
 }
 
 #taskbar {
+	background: #000000;
 }
 
 #taskbar button {
@@ -135,13 +135,13 @@ button:hover {
 
 #taskbar button.active {
 	border-bottom: 1px solid white;
-  background: @bg_active;
+  background: #000000;
 }
 
 #taskbar button:hover {
 	border-bottom: 1px solid white;
-  background: @bg_hover;
-	color: @content_main;
+  background: black;
+	color: #000000;
 }
 
 #window,
@@ -159,13 +159,14 @@ button:hover {
     margin-right: 0;
 }
 
-/* #clock { */
+/* #clock, */
 #custom-clock {
-    background-color: #000000;
-    color: #ffffff;
-    border-bottom: 1px solid #ffffff;
-    font-size: 18px;
-    font-weight: bold;
+background-color: #000000;
+color: #ffffff;
+border-bottom: 1px solid #ffffff;
+font-size: 18px;
+font-weight: bold;
+padding-right: 10px;
 }
 
 #battery {
@@ -282,9 +283,9 @@ label:focus {
 }
 
 #custom-power {
-    background-color: #0000FF;
+    background-color: #000000;
     color: #ffffff;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
 }
 
 #custom-media {
