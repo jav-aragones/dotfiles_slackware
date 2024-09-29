@@ -88,7 +88,14 @@ input "type:keyboard" xkb_layout latam
 
 input "type:touchpad" tap enabled dwt enabled
 
+<<<<<<< HEAD
 seat seat0 xcursor_theme breeze_cursor 32
+=======
+# Defimo tema y tamaño del cursor
+
+seat seat0 xcursor_theme Breeze_Snow 32
+
+>>>>>>> 847669d2b9136fdf81ff7a5e0901aeade0c428bc
 
 
 
@@ -259,5 +266,17 @@ bar {
     swaybar_command waybar
 }
 
+<<<<<<< HEAD
 
+=======
+#set $gnome-schema org.gnome.desktop.interface
+
+#exec_always {
+#    gsettings set $gnome-schema gtk-theme 'Breeze'
+#    gsettings set $gnome-schema icon-theme 'breeze-dark'
+#    gsettings set $gnome-schema cursor-theme 'breeze_cursors'
+#    gsettings set $gnome-schema cursor-theme-size '36'
+#    gsettings set $gnome-schema font-name 'sans-serif 11'
+#}
+>>>>>>> 847669d2b9136fdf81ff7a5e0901aeade0c428bc
 include /etc/sway/config.d/*
