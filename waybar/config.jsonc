@@ -1,13 +1,20 @@
 // -*- mode: jsonc -*-
 {
-    // "layer": "top", // Waybar at top layer
-    // "position": "bottom", // Waybar position (top|bottom|left|right)
+"include": [
+  "$HOME/.config/waybar/ModulesCustom"
+  ],
+
+     "layer": "top", // Waybar at top layer
+     "position": "top", // Waybar position (top|bottom|left|right)
     "height": 24, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
-    "spacing": 4, // Gaps between modules (4px)
+    "spacing": 3, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
         "custom/os_button",
+//	"custom/caja",
+//	"custom/foot",
+//	"custom/chrome",
 	"hyprland/workspaces",
 	"sway/workspaces",
 	"wlr/taskbar"
@@ -44,16 +51,15 @@
     //         "default": ""
     //     }
      },
-
-    "custom/os_button": {
+        "custom/os_button": {
         "format": "Slackware",
         "on-click": "fuzzel"
     },
 
     "wlr/taskbar": {
         "format": "{icon}",
-        "icon-size": 24,
-        "spacing": 3,
+        "icon-size": 22,
+        "spacing": 2,
         "on-click-right": "close",
         "tooltip-format": "{title}",
         "ignore-list": [],
@@ -114,7 +120,7 @@
     },
 
     "tray": {
-        "icon-size": 24,
+        "icon-size": 23,
         "spacing": 10
     },
     "custom/clock": {
@@ -194,6 +200,14 @@
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
+
+//    "wireplumber": {
+//        "format": "{volume}%",
+//        "format-muted": "",
+//        "on-click": "mate-volume-control",
+//        "max-volume": 150,
+//        "scroll-step": 0.2
+//    },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon} {format_source}",

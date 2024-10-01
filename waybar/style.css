@@ -1,21 +1,21 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: sans-serif;
-    font-size: 16px;
+    font-family: FontAwesome, Roboto, Arial, sans-serif;
+    font-size: 15px;
 }
 
 window#waybar {
    /*  background-color: rgba(43, 48, 59, 0.5); */
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: #000000;
     /* border-bottom: 2px solid rgba(100, 114, 125, 0.5); */
-	border-bottom: 1px solid #ffffff;
+	border-bottom: 1px solid #000000;
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
 }
 
 window#waybar.hidden {
-    opacity: 0.2;
+    opacity: 1.0;
 }
 
 /*
@@ -40,14 +40,14 @@ button {
     /* Use box-shadow instead of border so the text isn't offset */
     box-shadow: inset 0 -3px transparent;
     /* Avoid rounded borders under each button name */
-    border: 2px;
-    border-radius: 2px;
+    border: 1px;
+    border-radius: 1px;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
     background: inherit;
-    box-shadow: inset 0 -3px #ffffff;
+    box-shadow: inset 0 -2px #ffffff;
 }
 
 /* you can set a style on hover for any module like this */
@@ -68,11 +68,13 @@ button:hover {
 
 #workspaces button.focused {
     background-color: #000000;
+    border-bottom: 2px solid #ffffff;
     box-shadow: inset 0 -3px #ffffff;
 }
 
 #workspaces button.urgent {
     background-color: #eb4d4b;
+    border-bottom: 3px solid #ffffff;
 }
 
 #mode {
@@ -91,6 +93,9 @@ button:hover {
 #pulseaudio,
 #wireplumber,
 #custom-media,
+#custom-caja,
+#custom-foot,
+#custom-chrome,
 #tray,
 #mode,
 #idle_inhibitor,
@@ -102,14 +107,16 @@ button:hover {
     color: #ffffff;
 }
 
-
+#custom-caja,
+#custom-foot,
+#custom-chrome,
 #custom-os_button {
 	font-family: "Hack";
-        font-size: 14px;
+        font-size: 15px;
 	padding-left: 12px;
 	background: #000000;
 	color: #ffffff;
-	border-bottom: 1px solid #ffffff;
+	border-bottom: 1px solid #000000;
 	padding-right: 12px;
 	transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -124,17 +131,17 @@ button:hover {
 
 #taskbar button {
 	min-width: 25px;
-	border-bottom: 1px solid #ffffff;
+	border-bottom: 2px solid #ffffff;
 	margin-left: 2px;
 	margin-right: 2px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 2px;
+  padding-right: 2px;
   color: #000000;
 	transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 #taskbar button.active {
-	border-bottom: 1px solid white;
+	border-bottom: 3px solid white;
   background: #000000;
 }
 
@@ -146,7 +153,7 @@ button:hover {
 
 #window,
 #workspaces {
-    margin: 0 4px;
+    margin: 0 6px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -163,7 +170,7 @@ button:hover {
 #custom-clock {
 background-color: #000000;
 color: #ffffff;
-border-bottom: 1px solid #ffffff;
+border-bottom: 1px solid #000000;
 font-size: 18px;
 font-weight: bold;
 padding-right: 10px;
@@ -172,7 +179,7 @@ padding-right: 10px;
 #battery {
     background-color: #000000;
     color: #ffffff;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #000000;
 }
 
 #battery.charging, #battery.plugged {
@@ -240,7 +247,7 @@ label:focus {
 #custom-network-traffic {
     background-color: #000000;
     color: #ffffff;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #000000;
 }
 
 #network {
@@ -255,7 +262,7 @@ label:focus {
 #pulseaudio {
     background-color: #000000;
     color: #ffffff;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #000000;
 }
 
 #pulseaudio.muted {
@@ -285,7 +292,7 @@ label:focus {
 #custom-power {
     background-color: #000000;
     color: #ffffff;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid #000000;
 }
 
 #custom-media {
@@ -312,7 +319,7 @@ label:focus {
 
 #tray {
     background-color: #000000;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #000000;
 }
 
 #tray > .passive {
@@ -361,7 +368,7 @@ label:focus {
 #keyboard-state {
     background: #00000;
     color: #ffffff;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #000000;
     padding: 0 0px;
     margin: 0 3px;
     min-width: 16px;

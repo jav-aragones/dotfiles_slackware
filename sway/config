@@ -35,7 +35,7 @@ seat seat0 xcursor_theme breeze_cursors 32
 # Barras de titulos.
 
 
-font pango: Sans-serif 8
+font pango: Sans-serif 9
 client.focused #9EA09A #1A1AAA #ffffff
 client.unfocused #9EA09A  #222222 #ffffff
 default_border pixel 2
@@ -112,7 +112,11 @@ output HDMI-A-1 resolution 1360x768 position 0 0
 
 input "type:keyboard" xkb_layout latam
 
-input "type:touchpad" tap enabled dwt enabled
+input "type:touchpad" {
+	tap enabled 
+	dwt enabled 
+	tap_button_map lrm
+}
 
 #seat seat0 xcursor_theme Breez_Snoww 36
 
@@ -144,6 +148,8 @@ input "type:touchpad" tap enabled dwt enabled
     # Change normal to inverse to use left mouse button for resizing and right
     # mouse button for dragging.
     floating_modifier $mod normal
+    #floating_modifier $mod+Shift inverse
+
 
     # Reload the configuration file
     bindsym $mod+Shift+c reload
@@ -284,6 +290,8 @@ bindsym $mod+r mode "resize"
     for_window [app_id="mate-volume-control"] floating enable
     for_window [app_id="engrampa"] floating enable
     for_window [title="Save File"] floating enable
+    for_window [app_id="eom"] floating enable
+
 #
 # Status Bar:
 #
