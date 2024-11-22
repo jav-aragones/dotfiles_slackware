@@ -1,6 +1,6 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: FontAwesome, Roboto, Arial, sans-serif;
+    font-family: FontAwesome, Roboto, Arial, SymbolsNerdFont, sans-serif;
     font-size: 15px;
 }
 
@@ -171,7 +171,7 @@ button:hover {
 background-color: #000000;
 color: #ffffff;
 border-bottom: 1px solid #000000;
-font-size: 18px;
+font-size: 19px;
 font-weight: bold;
 padding-right: 10px;
 }
@@ -180,11 +180,16 @@ padding-right: 10px;
     background-color: #000000;
     color: #ffffff;
     border-bottom: 1px solid #000000;
+    font-size: 19px;
+    font-weight: bold;
 }
+
 
 #battery.charging, #battery.plugged {
     color: #ffffff;
     background-color: #26A65B;
+    font-size: 19px;
+    font-weight: bold;
 }
 
 @keyframes blink {
@@ -203,6 +208,8 @@ padding-right: 10px;
     animation-timing-function: steps(12);
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    font-size: 19px;
+    font-weight: bold;
 }
 
 #power-profiles-daemon {
